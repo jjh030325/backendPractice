@@ -7,3 +7,5 @@
 // console.log(sum(100, 200));
 
 // 화살표 함수
+let sum = (a, b) => a + b;
+console.log(sum(100,200));
