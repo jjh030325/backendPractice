@@ -1,0 +1,14 @@
+{
+  "name": "contacts-manager",
+  "version": "1.0.0",
+  "description": "simple contacts manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wpqlks7",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
