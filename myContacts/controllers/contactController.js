@@ -8,6 +8,14 @@ const getAllContacts = asyncHandler(async (req, res) => {
     res.render("index", { contacts: contacts });
 });
 
+// View and Contact form
+// GET   /contacts/add
+const adddContactForm = (req, res) => {
+    res.render("add");
+}
+
+// Create contact
+// POST /contacts/add
 const CreateContacts = asyncHandler(async (req, res) => {
     console.log(req.body);
     const {name, email, phone } = req.body;
@@ -60,5 +68,6 @@ module.exports = {
     CreateContacts,
     getContact,
     updateContact,
-    deleteContact
+    deleteContact,
+    adddContactForm,
 };
