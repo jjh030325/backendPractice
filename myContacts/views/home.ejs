@@ -1,0 +1,22 @@
+<%-include("./include/_header") %>
+
+  <!-- Main -->
+  <main id="site-main">
+
+    <div class="home-container">
+      <h3>로그인</h3>     
+      <p>로그인이 필요한 서비스입니다.</p>
+
+      <form class="login" method="POST" action="/">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="사용자 아이디" name="username" id="username">
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="비밀번호" name="password" id="password">
+      
+        <button type="submit">로그인</button>
+      </form>
+    </div>
+  </main>
+  <!-- /Main -->
+
+  <%-include("./include/_footer") %>
