@@ -22,12 +22,12 @@
           <td><%= contact.email %></td>
           <td><%= contact.phone %></td>
           <td>
-            <a href="#" class="btn update" title="수정">
+            <a href="/contacts/<%= contact._id %>" class="btn update" title="수정">
               <i class="fas fa-pencil-alt"></i>
             </a>
-            <a href="#" class="btn delete" title="삭제">
-              <i class="fas fa-times"></i>
-            </a>                
+            <form action = "/contacts/<%= contact._id %>?_method=DELETE" method="POST" style="display: inline">
+              <input type="submit" class="btn delete" title="삭제" value="X">
+            </form>               
           </td>
         </tr>
         <% }) %>
