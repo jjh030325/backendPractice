@@ -15,6 +15,7 @@ app.set("views", "./views");
 app.use(express.static("public"));
 
 app.use("/", require("./routes/main"));
+app.use("/", require("./routes/admin"));
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
